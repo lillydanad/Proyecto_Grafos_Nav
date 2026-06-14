@@ -1,1 +1,0 @@
-print("aca se debe ver el distrito")
