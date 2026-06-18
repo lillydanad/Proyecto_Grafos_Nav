@@ -19,7 +19,7 @@ def dijkstra(G, origen, destino):
         if nodo_actual == destino:
             break
         for vecino in G.neighbors(nodo_actual):
-            peso = G[nodo_actual][vecino].get('lenght', 1)
+            peso = G[nodo_actual][vecino].get('length', 1)
             nueva_dist = dist_actual + peso
             if nueva_dist < distancias[vecino]:
                 distancias[vecino] = nueva_dist
@@ -37,7 +37,7 @@ def dijkstra(G, origen, destino):
     return distancias[destino], camino
 
 def main():
-    G = nx.read_graphml("miraflores.graphml")
+    G = nx.read_graphml("../data/miraflores.graphml")
 
     lista_nodos = list(G.nodes())
 
