@@ -2,3 +2,6 @@ osmnx
 matplotlib
 networkx
 folium
+streamlit
+pandas
+openpyxl
